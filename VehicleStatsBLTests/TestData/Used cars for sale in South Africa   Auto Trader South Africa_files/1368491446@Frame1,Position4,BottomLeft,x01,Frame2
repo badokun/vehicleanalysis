@@ -1,0 +1,113 @@
+function OAS_RICH(position) {
+if (position == 'BottomLeft') {
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('		\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('//<![CDATA[\n');
+document.write ('var filePath                     = "http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_300x250/agents-buy300x250.swf/1382605054";\n');
+document.write ('var TFSMFlash_PRETAG             = "";\n');
+document.write ('var TFSMFlash_POSTTAG            = "";\n');
+document.write ('var TFSMFlash_VERSION            = "10";\n');
+document.write ('var TFSMFlash_WMODE              = "window";\n');
+document.write ('\n');
+document.write ('			var TFSMFlash_OASCLICK           = "http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/L-29/1203977821/BottomLeft/Autotrader-Int/Miway_300x250/Miway300x250.html/5a77737852314a2b62734141444c7673";\n');
+document.write ('	\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_SWFCLICKVARIABLE   = "?clickTAG="+TFSMFlash_OASCLICK + "";\n');
+document.write ('var TFSMFlash_SWFFILE            = filePath + TFSMFlash_SWFCLICKVARIABLE;\n');
+document.write ('var TFSMFlash_FSCOMMAND          = "";\n');
+document.write ('var TFSMFlash_IMAGEALTERNATE     = "http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_300x250/best-time_animate-300-x-250.gif/1382605054";\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_OASALTTEXT         = "Click Here!";\n');
+document.write ('var TFSMFlash_OASTARGET          = "_blank";\n');
+document.write ('var TFSMFlash_OASPROTOCOL        = "http://";\n');
+document.write ('var TFSMFlash_OASDIM             = "width=');
+document.write ("'");
+document.write ('300px');
+document.write ("'");
+document.write (' height=');
+document.write ("'");
+document.write ('250px');
+document.write ("'");
+document.write ('";\n');
+document.write ('var TFSMFlash_OASADID            = "OAS_RMF_BottomLeft_FLASH";\n');
+document.write ('document.write("<"+"scr"+"ipt type=\\');
+document.write ('"text/javascript\\');
+document.write ('" src=\\');
+document.write ('"http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_300x250/TFSMFlashWrapper301.js/1382605054\\');
+document.write ('"><\\');
+document.write ('/scr"+"ipt"+">");\n');
+document.write ('//]]>\n');
+document.write ('</script>\n');
+document.write ('<noscript><a href="http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/L-29/1203977821/BottomLeft/Autotrader-Int/Miway_300x250/Miway300x250.html/5a77737852314a2b62734141444c7673" target="_blank"><img src="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_300x250/best-time_animate-300-x-250.gif/1382605054" width="300" height="250" alt="Click Here!" style="border:0px black solid;" /></a></noscript>\n');
+document.write ('\n');
+document.write ('\n');
+}
+if (position == 'Frame1') {
+document.write ('<A HREF="http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/820347325/Frame1/default/empty.gif/5a77737852314a2b62734141444c7673?x" target="_top"><IMG SRC="http://imageceu1.247realmedia.com/0/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Frame2') {
+document.write ('<A HREF="http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/288654684/Frame2/default/empty.gif/5a77737852314a2b62734141444c7673?x" target="_top"><IMG SRC="http://imageceu1.247realmedia.com/0/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Position4') {
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('		\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('//<![CDATA[\n');
+document.write ('var filePath                     = "http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_728x90/agents-buy728x90.swf/1382605249";\n');
+document.write ('var TFSMFlash_PRETAG             = "";\n');
+document.write ('var TFSMFlash_POSTTAG            = "";\n');
+document.write ('var TFSMFlash_VERSION            = "10";\n');
+document.write ('var TFSMFlash_WMODE              = "window";\n');
+document.write ('\n');
+document.write ('			var TFSMFlash_OASCLICK           = "http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/L-29/2053094830/Position4/Autotrader-Int/Miway_728x90/Miway728x90.html/5a77737852314a2b62734141444c7673";\n');
+document.write ('	\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_SWFCLICKVARIABLE   = "?clickTAG="+TFSMFlash_OASCLICK + "";\n');
+document.write ('var TFSMFlash_SWFFILE            = filePath + TFSMFlash_SWFCLICKVARIABLE;\n');
+document.write ('var TFSMFlash_FSCOMMAND          = "";\n');
+document.write ('var TFSMFlash_IMAGEALTERNATE     = "http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_728x90/best-time_animate-728-x-90.gif/1382605249";\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_OASALTTEXT         = "Click Here!";\n');
+document.write ('var TFSMFlash_OASTARGET          = "_blank";\n');
+document.write ('var TFSMFlash_OASPROTOCOL        = "http://";\n');
+document.write ('var TFSMFlash_OASDIM             = "width=');
+document.write ("'");
+document.write ('728px');
+document.write ("'");
+document.write (' height=');
+document.write ("'");
+document.write ('90px');
+document.write ("'");
+document.write ('";\n');
+document.write ('var TFSMFlash_OASADID            = "OAS_RMF_Position4_FLASH";\n');
+document.write ('document.write("<"+"scr"+"ipt type=\\');
+document.write ('"text/javascript\\');
+document.write ('" src=\\');
+document.write ('"http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_728x90/TFSMFlashWrapper301.js/1382605249\\');
+document.write ('"><\\');
+document.write ('/scr"+"ipt"+">");\n');
+document.write ('//]]>\n');
+document.write ('</script>\n');
+document.write ('<noscript><a href="http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/L-29/2053094830/Position4/Autotrader-Int/Miway_728x90/Miway728x90.html/5a77737852314a2b62734141444c7673" target="_blank"><img src="http://imageceu1.247realmedia.com/RealMedia/ads/Creatives/Autotrader-Int/Miway_728x90/best-time_animate-728-x-90.gif/1382605249" width="728" height="90" alt="Click Here!" style="border:0px black solid;" /></a></noscript>\n');
+document.write ('\n');
+document.write ('\n');
+}
+if (position == 'x01') {
+document.write ('<A HREF="http://oas.autotrader.co.za/5c/autotrader-za/cars/usedsearch/L-29/813150864/x01/Autotrader-Int/CarLove_Web_SERP/Banner-160x600_New.jpg/5a77737852314a2b62734141444c7673?x" target=" "><IMG SRC="http://imageceu1.247realmedia.com/0/Autotrader-Int/CarLove_Web_SERP/Banner-160x600_New.jpg"  ALT="Click Here!"  BORDER="0"></A>');
+}
+}

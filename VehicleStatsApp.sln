@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleStatsApp", "VehicleStatsApp\VehicleStatsApp.csproj", "{382C4175-E9F3-4BE9-89FD-CAC1D8432EC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticsExtractor", "StatisticsExtractor\StatisticsExtractor.csproj", "{38FD1719-A7FE-4B31-809B-A590B1D1A9C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleStats.Core", "VehicleStatsBL\VehicleStats.Core.csproj", "{2B6E2B01-FE82-4EF4-AB61-2C72AE7C2FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleStats.Core.Test", "VehicleStatsBLTests\VehicleStats.Core.Test.csproj", "{8DF12990-76C0-4ED9-B91A-9A9F93D6BE15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleStats.Data", "VehicleStatsData\VehicleStats.Data.csproj", "{5696CFB6-BCF9-4946-BB80-27A9BC7DF8E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack.fx.4.5", "HtmlAgilityPack\HtmlAgilityPack.fx.4.5.csproj", "{1028002A-BBE2-4FF2-94B7-A8368A8F6887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleStatsApp.UI", "VehicleStatsApp.UI\VehicleStatsApp.UI.csproj", "{1840CEC0-AE1D-47E3-A0C1-4F00DCE3E14D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs34
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VehicleStatsApp\\VehicleStatsApp.csproj
+		SccProjectName1 = VehicleStatsApp
+		SccLocalPath1 = VehicleStatsApp
+		SccProjectUniqueName2 = StatisticsExtractor\\StatisticsExtractor.csproj
+		SccProjectName2 = StatisticsExtractor
+		SccLocalPath2 = StatisticsExtractor
+		SccProjectUniqueName3 = VehicleStatsBL\\VehicleStats.Core.csproj
+		SccProjectName3 = VehicleStatsBL
+		SccLocalPath3 = VehicleStatsBL
+		SccProjectUniqueName4 = VehicleStatsBLTests\\VehicleStats.Core.Test.csproj
+		SccProjectName4 = VehicleStatsBLTests
+		SccLocalPath4 = VehicleStatsBLTests
+		SccProjectUniqueName5 = VehicleStatsData\\VehicleStats.Data.csproj
+		SccProjectName5 = VehicleStatsData
+		SccLocalPath5 = VehicleStatsData
+		SccProjectUniqueName6 = HtmlAgilityPack\\HtmlAgilityPack.fx.4.5.csproj
+		SccProjectName6 = HtmlAgilityPack
+		SccLocalPath6 = HtmlAgilityPack
+		SccProjectUniqueName7 = VehicleStatsApp.UI\\VehicleStatsApp.UI.csproj
+		SccProjectName7 = VehicleStatsApp.UI
+		SccLocalPath7 = VehicleStatsApp.UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{382C4175-E9F3-4BE9-89FD-CAC1D8432EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382C4175-E9F3-4BE9-89FD-CAC1D8432EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382C4175-E9F3-4BE9-89FD-CAC1D8432EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382C4175-E9F3-4BE9-89FD-CAC1D8432EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FD1719-A7FE-4B31-809B-A590B1D1A9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FD1719-A7FE-4B31-809B-A590B1D1A9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FD1719-A7FE-4B31-809B-A590B1D1A9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FD1719-A7FE-4B31-809B-A590B1D1A9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B6E2B01-FE82-4EF4-AB61-2C72AE7C2FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6E2B01-FE82-4EF4-AB61-2C72AE7C2FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B6E2B01-FE82-4EF4-AB61-2C72AE7C2FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6E2B01-FE82-4EF4-AB61-2C72AE7C2FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF12990-76C0-4ED9-B91A-9A9F93D6BE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF12990-76C0-4ED9-B91A-9A9F93D6BE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF12990-76C0-4ED9-B91A-9A9F93D6BE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF12990-76C0-4ED9-B91A-9A9F93D6BE15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5696CFB6-BCF9-4946-BB80-27A9BC7DF8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5696CFB6-BCF9-4946-BB80-27A9BC7DF8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5696CFB6-BCF9-4946-BB80-27A9BC7DF8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5696CFB6-BCF9-4946-BB80-27A9BC7DF8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1028002A-BBE2-4FF2-94B7-A8368A8F6887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1028002A-BBE2-4FF2-94B7-A8368A8F6887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1028002A-BBE2-4FF2-94B7-A8368A8F6887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1028002A-BBE2-4FF2-94B7-A8368A8F6887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1840CEC0-AE1D-47E3-A0C1-4F00DCE3E14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1840CEC0-AE1D-47E3-A0C1-4F00DCE3E14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1840CEC0-AE1D-47E3-A0C1-4F00DCE3E14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1840CEC0-AE1D-47E3-A0C1-4F00DCE3E14D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

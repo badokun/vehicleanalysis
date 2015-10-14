@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DF12990-76C0-4ED9-B91A-9A9F93D6BE15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VehicleStats.Core.Test</RootNamespace>
+    <AssemblyName>VehicleStats.Core.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ArgumentBuilderTest.cs" />
+    <Compile Include="FileStatsRepositoryTest.cs" />
+    <Compile Include="ExtractionArgumentsTest.cs" />
+    <Compile Include="ExtractionEngineTest.cs" />
+    <Compile Include="AutoTraderZaPageScraperTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatisticsTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack.fx.4.5.csproj">
+      <Project>{1028002A-BBE2-4FF2-94B7-A8368A8F6887}</Project>
+      <Name>HtmlAgilityPack.fx.4.5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VehicleStatsBL\VehicleStats.Core.csproj">
+      <Project>{2b6e2b01-fe82-4ef4-ab61-2c72ae7c2fc3}</Project>
+      <Name>VehicleStats.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VehicleStatsData\VehicleStats.Data.csproj">
+      <Project>{5696cfb6-bcf9-4946-bb80-27a9bc7df8e9}</Project>
+      <Name>VehicleStats.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="TestData\bmw[3-series] 2001_2014.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\Example.xlsx" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\100" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\1368491446%40Frame1,Position4,BottomLeft,x01,Frame2" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%281%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%282%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%283%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%284%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%285%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%286%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%287%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%288%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\160%289%29" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\400" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\adServer.bs" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\em_js" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\jsapi" />
+    <None Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\saved_resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\jsonResponse.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Root - Auto Trader South Africa - Used Cars for sale_files\Auto Trader South Africa - Used Cars for sale_za-.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\12813342_c6dab411-ba48-4e5d-ac72-5a0f3b1041a9.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\afs.htm" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\async-ads.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\autotrader-logo.png" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\B7831792.htm" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\bundle.css" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\bundle.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\dc.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\ebSingleExpBanner_2_7_2_0.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\em.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\empty.gif" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\gtm.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\img.gif" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\inpageGlobalTemplate_v2_75_02.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\jodometer-numbers.png" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\loader.gif" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\logo%281%29.jpg" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\logo%282%29.jpg" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\logo%283%29.jpg" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\logo%284%29.jpg" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\logo%285%29.jpg" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\logo.jpg" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\plcr_2446486_275071579_1377679205372.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\PrivateFinance_728x90_value4money.gif" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\search.I.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\search.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\show_ads.js" />
+    <Content Include="TestData\Used cars for sale in South Africa   Auto Trader South Africa_files\watchlist-error-icon.png" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Views="clr-namespace:StatisticsExtractor.Views" x:Class="StatisticsExtractor.MainWindow"
+        Title="MainWindow" Height="440" Width="645" ResizeMode="CanResizeWithGrip" WindowStyle="None"  Background="Transparent" AllowsTransparency="True">
+    <Border CornerRadius="10" Padding="6" Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" MinHeight="40"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <TabControl Grid.Row="1" Margin="6" Grid.ColumnSpan="2">
+                <TabItem Header="Search Criteria" >
+                    <Grid Background="#FFE5E5E5">
+                        <Views:ExtractionArgumentsView  DataContext="{Binding Mode=Default, Source={StaticResource DS}}"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+            <TextBlock TextWrapping="Wrap" Text="Vehicle Statistics" FontSize="29.333" Margin="6" FontFamily="SketchFlow Print"/>
+            <Button  Content="X" FontSize="29" Margin="6" FontFamily="SketchFlow Print" Grid.Column="1" Click="Button_Click"/> 
+        </Grid>
+
+    </Border>
+</Window>

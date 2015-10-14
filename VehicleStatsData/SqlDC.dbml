@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SQLDatabase" Class="SqlDCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\SQLDatabase.mdf;Integrated Security=True" SettingsObjectName="VehicleStats.Data.Properties.Settings" SettingsPropertyName="SQLDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ExtractionResults" Member="ExtractionResults">
+    <Type Name="ExtractionResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ModelId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[From]" Member="From" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[To]" Member="To" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExtractionDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="ExtractionResult_Vehicle" Member="Vehicles" ThisKey="Id" OtherKey="ExtractionResults_FK" Type="Vehicle" />
+      <Association Name="Model_ExtractionResult" Member="Model" ThisKey="ModelId" OtherKey="Id" Type="Model" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Make" Member="Makes">
+    <Type Name="Make">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MakeName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SourceSystemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Make_Model" Member="Models" ThisKey="Id" OtherKey="Make_FK" Type="Model" />
+      <Association Name="SourceSystem_Make" Member="SourceSystem" ThisKey="SourceSystemId" OtherKey="Id" Type="SourceSystem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Model" Member="Models">
+    <Type Name="Model">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Make_FK" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModelName" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Model_ExtractionResult" Member="ExtractionResults" ThisKey="Id" OtherKey="ModelId" Type="ExtractionResult" />
+      <Association Name="Make_Model" Member="Make" ThisKey="Make_FK" OtherKey="Id" Type="Make" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SourceSystem" Member="SourceSystems">
+    <Type Name="SourceSystem">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="SourceSystem_Make" Member="Makes" ThisKey="Id" OtherKey="SourceSystemId" Type="Make" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vehicle" Member="Vehicles">
+    <Type Name="Vehicle">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Milage" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ExtractionResults_FK" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ExtractionResult_Vehicle" Member="ExtractionResult" ThisKey="ExtractionResults_FK" OtherKey="Id" Type="ExtractionResult" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExtractionResultsView" Member="ExtractionResultsViews">
+    <Type Name="ExtractionResultsView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SourceSystem" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MakeName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="ModelName" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="[From]" Member="From" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[To]" Member="To" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MakeModelView" Member="MakeModelViews">
+    <Type Name="MakeModelView">
+      <Column Name="SourceSystem" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MakeName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="ModelName" Type="System.String" DbType="VarChar(350) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

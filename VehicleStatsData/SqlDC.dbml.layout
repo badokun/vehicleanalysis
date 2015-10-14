@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="SqlDC">
+  <DataContextMoniker Name="/SqlDCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8884144e-2ef5-4ca2-a590-cfc0a69da958" absoluteBounds="3.25, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/SqlDCDataContext/ExtractionResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="010ddd55-2a1a-4265-8126-a841276adaea" absoluteBounds="3.265, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48ab9118-6f6a-4c91-ac27-f6513b88350f" absoluteBounds="6.25, 5.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SqlDCDataContext/Make" />
+      <nestedChildShapes>
+        <elementListCompartment Id="603a7da7-86ae-4997-a6d4-5f3effc215e2" absoluteBounds="6.265, 5.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fca3b0fd-f76e-46e1-9a51-5edd4aa71f32" absoluteBounds="7, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SqlDCDataContext/Model" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8b31c01-f899-4652-bf5f-75f1b817e81f" absoluteBounds="7.015, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 1.66429768880208); (5.25 : 1.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDCDataContext/Model/Model_ExtractionResult" />
+      <nodes>
+        <classShapeMoniker Id="fca3b0fd-f76e-46e1-9a51-5edd4aa71f32" />
+        <classShapeMoniker Id="8884144e-2ef5-4ca2-a590-cfc0a69da958" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.625 : 5.375); (7.625 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDCDataContext/Make/Make_Model" />
+      <nodes>
+        <classShapeMoniker Id="48ab9118-6f6a-4c91-ac27-f6513b88350f" />
+        <classShapeMoniker Id="fca3b0fd-f76e-46e1-9a51-5edd4aa71f32" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="721ba00e-c7ae-4489-8378-8628c4e8736a" absoluteBounds="1.125, 4, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SqlDCDataContext/SourceSystem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1330ba1-b7f4-404c-bdaa-183f880c07d0" absoluteBounds="1.1400000000000001, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 4.59699625651042); (6.7187475 : 4.59699625651042); (6.7187475 : 5.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDCDataContext/SourceSystem/SourceSystem_Make" />
+      <nodes>
+        <classShapeMoniker Id="721ba00e-c7ae-4489-8378-8628c4e8736a" />
+        <classShapeMoniker Id="48ab9118-6f6a-4c91-ac27-f6513b88350f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="417266ac-c272-4a19-82a5-708ab285b123" absoluteBounds="0.5, 1.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SqlDCDataContext/Vehicle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f42a8eb7-0abf-44aa-b350-7cee9b3c15cc" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 1.82294840494792); (2.5 : 1.82294840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlDCDataContext/ExtractionResult/ExtractionResult_Vehicle" />
+      <nodes>
+        <classShapeMoniker Id="8884144e-2ef5-4ca2-a590-cfc0a69da958" />
+        <classShapeMoniker Id="417266ac-c272-4a19-82a5-708ab285b123" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8fc0f2ea-43f7-4c2a-997c-9906e7e300ee" absoluteBounds="1.375, 6.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SqlDCDataContext/ExtractionResultsView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb09189a-ccb9-45c1-848f-2358200c8297" absoluteBounds="1.3900000000000001, 7.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1db9548-9931-40d1-b96e-b43d1120b0ad" absoluteBounds="3.875, 6.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SqlDCDataContext/MakeModelView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dbe8a29-fdc5-4048-8257-0062c42af294" absoluteBounds="3.8899999999999997, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
